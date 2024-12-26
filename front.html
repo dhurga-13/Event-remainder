@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reminder App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf4f4; 
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #80ced6, #d2e9e9); 
+            color: #333;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 15px 15px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .main-content {
+            padding: 2rem;
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .hero {
+            background-color: #ffffff; /* White card background */
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #80ced6; /* Soft teal for headings */
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .btn-get-started {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #80ced6, #d2e9e9); /* Button gradient in teal-blue */
+            color: #333;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-get-started:hover {
+            background: linear-gradient(135deg, #d2e9e9, #80ced6); /* Hover effect */
+            transform: translateY(-3px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .features {
+            background-color: #ffffff; /* White card background */
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+        }
+
+        .features h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .features ul {
+            list-style-type: none;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .features li {
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .features li:hover {
+            background-color: #f0f7f7; /* Light hover effect */
+            border-radius: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(135deg, #333, #4d4d4d); /* Dark gradient for footer */
+            color: #ffffff;
+            margin-top: 2rem;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Event Reminder</h1>
+        <p>Never miss an important event again!</p>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h2>Stay Organized, Stay On Time</h2>
+            <p>Our Event Reminder app helps you track and count down to your important dates and events with ease.</p>
+            <a href="index.php" class="btn-get-started">Get Started</a>
+        </section>
+
+        <section class="features" id="get-started">
+            <h3>Features</h3>
+            <ul>
+                <li>Create countdown events with specific dates and times.</li>
+                <li>View countdowns for upcoming and past events.</li>
+                <li>Customize the appearance of each event reminder.</li>
+                <li>Store your events securely in the database.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Event Reminder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
